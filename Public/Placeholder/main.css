@@ -1,0 +1,36 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+img {
+    width: 35%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+}
+
+section {
+    text-align: center;
+}
+
+#caro{
+	margin: 50px auto;
+	position: relative;
+	width: 250%;
+	height: 250%;
+	padding: 10px; 
+	box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+#caro > div{
+	position: absolute;
+	top: 10px;
+	left: 10px; 
+	right: 10px; 
+	bottom: 10px;
+}
+
+.fit { 
+	width:50%; 
+	height:50%;
+}
