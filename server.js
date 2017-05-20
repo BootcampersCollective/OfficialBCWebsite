@@ -6,6 +6,7 @@ var express = require('express'),
     fileServer = express.static('public'),
     fs = require('fs');
 
+
 var app = express();
 
 var PORT = process.env.port || 3000;
@@ -19,6 +20,7 @@ app.use(fileServer);
 app.use(morgan('dev'));
 
 // make our database connection
+mongoose.Promise = global.Promise;
 mongoose.connect('mongodb://localhost/hackathon', function(errorTime){
     errorTime ? 
         console.log('NO CONNECTION TO DB')

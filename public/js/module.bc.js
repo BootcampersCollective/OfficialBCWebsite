@@ -13,6 +13,11 @@ function angularRouter ($routeProvider) {
         .when('/about',
             {
                 templateUrl: '/partials/about.html',
-            });
+            })
+        .when('/auth', {
+                templateUrl : '/partials/auth.html',
+                controller : 'authController',
+                controllerAs : 'auth'
+                });
 
 }
