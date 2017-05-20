@@ -14,3 +14,6 @@ Repository for the Bootcampers' Collective official website.
 4. Profile page -- a profile page with picture, technology stack, want to learns.
 
 5. Projects page -- a place to show off our projects that we've built and what our members have built with an input for community outreach.
+
+
+#1c422f ,#3bb37f ,#72a981 ,#FFFFFF ,#34B37C ,#FFFFFF ,#FFFFFF ,#72a981 

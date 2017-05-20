@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="bootApp">
+
+<head>
+    <title>Bootcampers Collective</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.js"></script>
+    <script src="/js/module.bc.js"></script>
+    <script src="js/controller.bc.js"></script>
+    <!-- <script src="/js/factory.bc.js"></script> -->
+
+
+</head>
+
+<body ngController="bootcamperController">
+    <a ng-href="#/">home</a>
+    <a ng-href="#/about">about</a>
+   <ng-view>
+       <!--partials go here!-->
+   </ng-view>
+</body>
+
+</html>
