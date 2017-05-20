@@ -8,13 +8,17 @@
     <script src="/js/module.bc.js"></script>
     <script src="js/controller.bc.js"></script>
     <!-- <script src="/js/factory.bc.js"></script> -->
+    <script src="./js/auth/auth.controller.js" charset="utf-8"></script>
+    <script src="./js/auth/auth.factory.js" charset="utf-8"></script>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css">
 
 </head>
 
 <body ngController="bootcamperController">
     <a ng-href="#/">home</a>
     <a ng-href="#/about">about</a>
+    <a ng-href="#/auth">login</a>
    <ng-view>
        <!--partials go here!-->
    </ng-view>
