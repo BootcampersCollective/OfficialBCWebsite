@@ -10,7 +10,7 @@ function switchImages () {
 		}
 	}
 }
-
+//On HOVER the carousel will start
 function placeholder () {
 		$('#logo').hover(setInterval(switchImages,3000));
 	};
