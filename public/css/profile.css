@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Muli|Nosifer');
+
+.profile-name {
+  font-family: 'Nosifer', cursive;
+  text-shadow: 5px 5px 10px;
+  font-size: 8rem;
+}
+
+.tag {
+  font-family: 'Muli', sans-serif;
+  flex: 1;
+  font-size: 5rem;
+}
+
+.red {
+  color: red;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  flex: 1;
+}
+
+.anchor-tags {
+  display: flex;
+  flex-direction: row;
+  width: 80vw;
+  text-align: center;
+}
+
+.anchor-tag {
+  font-family: 'Muli', sans-serif;
+  flex: 1;
+  color: white !important;
+  background-color: teal;
+  text-decoration: none;
+}
+
+.section-head {
+  flex: auto;
+  font-family: 'Muli', sans-serif;
+  font-size: 2rem;
+  text-align: left;
+  margin-left: 5vw;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-contact {
+  flex: 1;
+}
+
+.about-summary {
+  flex: 3;
+}

@@ -24,6 +24,9 @@ function angularRouter ($routeProvider) {
 
         .when('/events', {
                 templateUrl : '/partials/event.html',
+                })
+        .when('/profile', {
+                templateUrl   : '/partials/profile.html',
                 });
 
 }
