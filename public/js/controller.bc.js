@@ -10,4 +10,17 @@ function bootcampersFunction($http) {
 
     bCtl.title = "test!";
 
+    bCtl.data = '';
+
+    bCtl.signUp = function () {
+
+          $http.post('/signUp', bCtl.data)
+               .then(function success(response) {
+                      console.log("Sent Email!");
+                      bCtl.message = response.data;
+                }
+              )
+              .catch(function(err){console.log("Update via put failed, caught error: ",err)})
+    }
+
 }

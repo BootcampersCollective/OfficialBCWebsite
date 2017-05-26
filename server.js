@@ -11,18 +11,25 @@ var app = express();
 
 var PORT = process.env.port || 3000;
 
-app.post('*', bodyParser.json(),bodyParser.urlencoded({extended:true}));
+// app.post('*', bodyParser.json(),bodyParser.urlencoded({extended:true}));
 
 // include static routes for serving up static html files.
 app.use(fileServer);
 
-// setup the logger 
+//Post route for sign ups to group
+app.post('/signUp', function(req, res) {
+      console.info('Register payload:', req.body);
+      res.send("Congrats! Check you email for more info.");
+    }
+);
+
+// setup the logger
 app.use(morgan('dev'));
 
 // make our database connection
 mongoose.Promise = global.Promise;
 mongoose.connect('mongodb://localhost/hackathon', function(errorTime){
-    errorTime ? 
+    errorTime ?
         console.log('NO CONNECTION TO DB')
         :    console.log('SQUAWK');
 });

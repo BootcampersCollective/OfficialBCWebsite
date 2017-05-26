@@ -12,7 +12,7 @@ function switchImages () {
 }
 
 function placeholder () {
-		$('logo').hover(setInterval(switchImages,3000));
+		$('#logo').hover(setInterval(switchImages,3000));
 	};
 
 placeholder();
