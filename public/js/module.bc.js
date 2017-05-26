@@ -6,18 +6,24 @@ function angularRouter ($routeProvider) {
     $routeProvider
         .when('/',
             {
-                templateUrl: '/partials/home.html',
+                templateUrl: '/partials/placeholder.html',
                 controller: 'bootcamperController',
                 controllerAs: 'bCtl',
             })
+
         .when('/about',
             {
                 templateUrl: '/partials/about.html',
             })
+
         .when('/auth', {
                 templateUrl : '/partials/auth.html',
                 controller : 'authController',
                 controllerAs : 'auth'
+                })
+
+        .when('/events', {
+                templateUrl : '/partials/event.html',
                 });
 
 }
