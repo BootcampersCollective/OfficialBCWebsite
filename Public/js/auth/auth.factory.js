@@ -16,11 +16,23 @@ angular.module('bootApp')
             password:password
             }
         })
+    }
+    
+    function login(email,password){
+      return $http({
+        method: 'POST',
+        url: '/login',
+        data:{
+          email:email,
+          password:password
         }
+      })
+    }
 
 
       return{
-          register:register
+          register:register,
+          login:login
       };
 
   };

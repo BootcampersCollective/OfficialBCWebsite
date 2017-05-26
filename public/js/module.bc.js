@@ -20,10 +20,19 @@ function angularRouter ($routeProvider) {
                 templateUrl : '/partials/auth.html',
                 controller : 'authController',
                 controllerAs : 'auth'
+<<<<<<< HEAD
                 })
 
         .when('/events', {
                 templateUrl : '/partials/event.html',
                 });
+=======
+            })
+            
+        .when('/dashboard',
+            {
+                templateUrl: '/partials/dashboard.html',
+            })
+>>>>>>> commiting
 
 }

@@ -34,13 +34,13 @@
     <meta name="theme-color" content="#ffffff">
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"> </script>
 </head>
-<body>
-      <!--UNCOMMENT THE LINKS ONCE WE HAVE OUR VERSION 1 READY TO BE DEPLOYED-->
-      <!-- <a ng-href="#/">home</a>
-           <a ng-href="#/about">about</a>
-           <a ng-href="#/auth">login</a>
-           <a ng-href="#/events">events</a> -->
-    <ng-view ngController="bootcamperController as bCtl">
+
+<body ngController="bootcamperController">
+    <a ng-href="#/">home</a>
+    <a ng-href="#/about">about</a>
+    <a ng-href="#/auth">login</a>
+    <a ng-href="#/dashboard">dashboard</a>
+   <ng-view ngController="bootcamperController as bCtl">
        <!--partials go here!-->
      </ng-view>
     <script type="text/javascript" src="./js/placeholder.js"></script>

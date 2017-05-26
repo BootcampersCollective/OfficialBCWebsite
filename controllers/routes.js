@@ -11,6 +11,7 @@ module.exports = (app) => {
 //
 
     app.post('/register', authShit.registerUser);
+    app.post('/login', authShit.loginUser);
 
     app.get('/api/things', thingCtrl.get) // get one
     app.get('/api/things/:id', thingCtrl.get) // get many

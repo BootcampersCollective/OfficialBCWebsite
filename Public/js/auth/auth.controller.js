@@ -6,7 +6,7 @@ authCtrl.$inject = ['$http', 'authFactory'];
 function authCtrl ($http, authFactory){
   var auth = this;
 
-  auth.greeting = "hello world";
+// Register
 
   auth.register = function (){
       if(auth.registerPassword != auth.confirmPassword){
@@ -14,8 +14,27 @@ function authCtrl ($http, authFactory){
       } else {
           authFactory
             .register(auth.firstName, auth.registerEmail, auth.registerPassword)
-            .then()
+            .then(auth.register.success, auth.register.errors)
       };
-
   };
+
+  auth.register.error = function(err){
+    console.log(err);
+  };
+
+  auth.register.success = function(res){
+    location.href ='#/dashboard'
+  };
+
+
+// Login
+
+  auth.login = function(){
+  authFactory
+    .login(auth.email, auth.password)
+    .then(auth.login.success, auth.login.error);
+}
+
+
+
 };
