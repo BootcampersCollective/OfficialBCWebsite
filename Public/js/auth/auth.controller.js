@@ -35,6 +35,14 @@ function authCtrl ($http, authFactory){
     .then(auth.login.success, auth.login.error);
 }
 
+  auth.login.success = function(res){
+    console.log(res.data)
+  }
+
+  auth.login.error = function(err){
+    console.log(err.data);
+  }
+
 
 
 };

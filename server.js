@@ -4,8 +4,20 @@ var express = require('express'),
     morgan = require ('morgan'),
     routes = require('./controllers/routes'),
     fileServer = express.static('public'),
-    fs = require('fs');
+    fs = require('fs'),
+    clientSessions  = require('client-sessions');
 
+var sessionsMiddleware = clientSessions({
+  cookieName: 'auth-cookie',
+      secret: 'OFFICIALBCWEBSITE',
+      requestKey: 'session',
+      duration: (86400 * 1000) * 7,
+      cookie: {
+          ephemeral: false,
+          httpOnly: true,
+          secure: false 
+      }
+});
 
 var app = express();
 
@@ -26,6 +38,8 @@ app.post('/signUp', function(req, res) {
 // setup the logger
 app.use(morgan('dev'));
 
+app.use(sessionsMiddleware);
+
 // make our database connection
 mongoose.Promise = global.Promise;
 mongoose.connect('mongodb://localhost/hackathon', function(errorTime){
@@ -33,6 +47,7 @@ mongoose.connect('mongodb://localhost/hackathon', function(errorTime){
         console.log('NO CONNECTION TO DB')
         :    console.log('SQUAWK');
 });
+
 
 // call our routes
 routes(app);

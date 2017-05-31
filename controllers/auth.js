@@ -17,4 +17,36 @@ module.exports = {
         }
         })
     },
-    };
+
+    loginUser : (req,res)=>{
+        Auth.findOne({email:req.body.email}, function(err,user){
+        if(err){
+
+        }else if(!user){
+            res.status(403).send('User not found!');
+        }else {
+
+            bcrypt.compare(req.body.password, user.password, function(bcryptErr, matched){
+
+            if(bcryptErr){
+                res.status(500).send('mongodb error');
+            } else if(!matched){
+                res.status(403).send('Incorrect Password!');
+            }
+            else {
+                console.log('id -'.red, user._id)
+                req.session.uid=user._id;
+                console.log(req.session.uid)
+                res.send(user)
+            };
+            });
+        };
+        });
+    },
+
+    me : (req,res)=>{
+        Auth.findOne({_id : req.session.uid}, function(err, user){
+        res.send(user)
+        });
+    },
+};

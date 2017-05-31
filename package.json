@@ -12,7 +12,11 @@
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.17.2",
+<<<<<<< HEAD
     "colors": "^1.1.2",
+=======
+    "client-sessions": "^0.8.0",
+>>>>>>> login work
     "express": "^4.15.3",
     "mongoose": "^4.10.0",
     "morgan": "^1.8.1"
