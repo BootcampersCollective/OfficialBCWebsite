@@ -26,6 +26,7 @@ function authCtrl ($http, authFactory){
     location.href ='#/dashboard'
   };
 
+<<<<<<< Updated upstream
 
 // Login
 
@@ -45,4 +46,9 @@ function authCtrl ($http, authFactory){
 
 
 
+=======
+  auth.login = function(){
+    
+  }
+>>>>>>> Stashed changes
 };
