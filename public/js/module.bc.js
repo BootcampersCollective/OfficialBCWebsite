@@ -16,15 +16,16 @@ function angularRouter ($routeProvider) {
                 templateUrl: '/partials/about.html',
             })
 
-        .when('/auth', {
+        .when('/auth', 
+            {
                 templateUrl : '/partials/auth.html',
                 controller : 'authController',
                 controllerAs : 'auth'
-                })
+            })
 
-        .when('/events', {
+        .when('/events', 
+            {
                 templateUrl : '/partials/event.html',
-                });
             })
             
         .when('/dashboard',

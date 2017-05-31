@@ -19,6 +19,7 @@ module.exports = {
     },
 
     loginUser : (req,res)=>{
+        console.log('Something'.yellow, req.body.email)
         Auth.findOne({email:req.body.email}, function(err,user){
         if(err){
 

@@ -29,6 +29,7 @@ function authCtrl ($http, authFactory){
 // Login
 
   auth.login = function(){
+    console.log(auth.email)
   authFactory
     .login(auth.email, auth.password)
     .then(auth.login.success, auth.login.error);
@@ -39,6 +40,6 @@ function authCtrl ($http, authFactory){
   }
 
   auth.login.error = function(err){
-    console.log(err.data);
+    // console.log(err.data);
   }
 };

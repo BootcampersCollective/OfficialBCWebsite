@@ -23,7 +23,7 @@ var app = express();
 
 var PORT = process.env.port || 3000;
 
-// app.post('*', bodyParser.json(),bodyParser.urlencoded({extended:true}));
+app.post('*', bodyParser.json(),bodyParser.urlencoded({extended:true}));
 
 // include static routes for serving up static html files.
 app.use(fileServer);
