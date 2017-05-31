@@ -1,1 +1,10 @@
+# MAC Files/Dirs
+
+# Windows Files/Dirs
+
+# NPM Files/Dirs
 node_modules
+
+# IDE Related
+.idea/
+.vscode/
