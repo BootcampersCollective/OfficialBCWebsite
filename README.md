@@ -13,6 +13,11 @@ Repository for the Bootcampers' Collective official website.
 * Back End:
     - Node [Homepage](https://nodejs.org/en/)
 
+## Contributing
+- Please check the issues page, also if you would like, you can use [waffle.io](http://waffle.io)
+
+- If you would like to contribute please contact the Bootcampers collective via their slack channel.  (link to come soon)
+
 ## Page Structure:
 
 1. Place Holder -- this will be deployed as a placeholder while we build the website.
