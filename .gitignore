@@ -3,8 +3,12 @@
 # Windows Files/Dirs
 
 # NPM Files/Dirs
-node_modules
+node_modules/
 
 # IDE Related
 .idea/
 .vscode/
+
+# Build related
+.sass-cache/
+Public/
