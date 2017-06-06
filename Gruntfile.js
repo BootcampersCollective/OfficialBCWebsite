@@ -11,6 +11,7 @@ module.exports = function (grunt) {
         concat: {
             vendor:{
                 src: [
+                    'node_modules/jquery.js',
                     'node_modules/angular/angular.js',
                     'node_modules/angular-ui-router/release/angular-ui-router.js',
 	                'node_modules/angular-ui-router/release/stateEvents.js',
@@ -61,7 +62,7 @@ module.exports = function (grunt) {
         sass: {
             main: {
 	            options: {
-		            sourcemap: 'auto'
+		            sourcemap: 'inline'
 	            },
 	            files: {
 		            'public/css/main.css': 'app/main.scss'
