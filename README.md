@@ -14,7 +14,7 @@ Repository for the Bootcampers' Collective official website.
     - Node [Homepage](https://nodejs.org/en/)
 
 ## Contributing
-* To initially begin working on the project, you'll need to first reach out to Charlie Beck to be added to the team.
+* To initially begin working on the project, you'll need to first reach out to Charlie Beck on [Slack](https://bootcamperscollective.slack.com) to be added to the team.
 
 
 * Once you have been added to the team, clone the repository to your machine making sure to develop of of the development branch.
