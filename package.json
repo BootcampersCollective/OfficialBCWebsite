@@ -2,6 +2,7 @@
   "name": "official_bootcampers_website",
   "version": "1.0.0",
   "description": "Bootcampers Collective website",
+  "repository": "https://github.com/BootcampersCollective/OfficialBCWebsite.git",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -28,8 +29,10 @@
     "grunt-cli": "^1.2.0",
     "grunt-contrib-clean": "^1.1.0",
     "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-sass": "^1.0.0",
     "grunt-contrib-watch": "^1.0.0",
-    "node-sass": "^4.5.3"
+    "node-sass": "^4.5.3",
+    "nodemon": "^1.11.0"
   }
 }
