@@ -56,5 +56,7 @@ section {
 @media (min-width: 550px) {
   .mobile {
     display: none; } }
+body {
+  background-color: #5bc0de; }
 
 /*# sourceMappingURL=main.css.map */

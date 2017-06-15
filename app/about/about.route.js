@@ -2,7 +2,7 @@ function aboutRoute($stateProvider) {
 	$stateProvider
 		.state({
 			name: 'app.about',
-			url: '/about',
+			url: 'about',
 			component: 'about'
 		});
 }

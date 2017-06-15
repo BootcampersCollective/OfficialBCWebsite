@@ -4,9 +4,11 @@ const home = {
 	},
 	controller: function () {
 		let ctrl = this;
-		ctrl.title = "Bootcampers Collective";
+		ctrl.title = 'Bootcampers Collective';
 		
-		ctrl.$onInit = function () {};
+		ctrl.$onInit = function () {
+			console.log('init Home');
+		};
 		ctrl.$postLink = function () {};
 	},
 	template: ` <h1>{{$ctrl.title}}</h1>

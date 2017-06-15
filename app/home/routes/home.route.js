@@ -1,8 +1,8 @@
 function homeRoute ($stateProvider) {
 	$stateProvider
 		.state({
-			name: 'home',
-			url: '',
+			name: 'app',
+			url: '/',
 			component: 'home'
 		});
 }

@@ -1,9 +1,12 @@
 const about = {
 	bindings: {},
 	controller: function () {
+		let ctrl = this;
+
+		ctrl.$onInit = function () {};
 
 	},
-	template: ``
+	template: `<div>About</div>`
 };
 
 angular.module('bc-site.about')

@@ -1,6 +1,6 @@
 function bcSiteConfig($locationProvider, $urlRouterProvider){
 	$locationProvider.html5Mode(true);
-	$urlRouterProvider.otherwise('');
+	$urlRouterProvider.otherwise('/');
 }
 
 angular.module('bc-site')
