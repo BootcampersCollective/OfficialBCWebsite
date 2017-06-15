@@ -14,9 +14,33 @@ Repository for the Bootcampers' Collective official website.
     - Node [Homepage](https://nodejs.org/en/)
 
 ## Contributing
+* To initially begin working on the project, you'll need to first reach out to Charlie Beck on [Slack](https://bootcamperscollective.slack.com) to be added to the team.
+
+
+* Once you have been added to the team, clone the repository to your machine making sure to develop of of the development branch.
+- To do this run the following:   
+ - git clone <insert url>
+ - git checkout development
+
+
+* Next, you will need to install dependencies:
+    - npm install
+
+
+* Now, you will need to build the code base using Grunt.
+    - grunt build
+
+
+* Finally, you will need to start the server.
+    - nodemon server.js
+
+
 - Please check the issues page, also if you would like, you can use [waffle.io](http://waffle.io)
 
 - If you would like to contribute please contact the Bootcampers collective via their slack channel.  (link to come soon)
+
+
+
 
 ## Page Structure:
 
@@ -30,5 +54,7 @@ Repository for the Bootcampers' Collective official website.
 
 5. Projects page -- a place to show off our projects that we've built and what our members have built with an input for community outreach.
 
+6. About Us page
 
-#1c422f ,#3bb37f ,#72a981 ,#FFFFFF ,#34B37C ,#FFFFFF ,#FFFFFF ,#72a981 
+
+#1c422f ,#3bb37f ,#72a981 ,#FFFFFF ,#34B37C ,#FFFFFF ,#FFFFFF ,#72a981
