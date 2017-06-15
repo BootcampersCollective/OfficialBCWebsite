@@ -4,6 +4,7 @@
 
 # NPM Files/Dirs
 node_modules/
+npm-debug.log
 
 # IDE Related
 .idea/
