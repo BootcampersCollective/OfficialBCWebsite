@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="bootApp">
+<html ng-app="bc-site">
 
 <head>
     <title>Bootcampers Collective</title>
@@ -23,6 +23,7 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/images/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+    <base href="/">
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"> </script>
 </head>
 <body>
@@ -31,9 +32,9 @@
            <a ng-href="#/about">about</a>
            <a ng-href="#/auth">login</a>
            <a ng-href="#/events">events</a> -->
-    <ng-view ngController="bootcamperController as bCtl">
-       <!--partials go here!-->
-     </ng-view>
+    <ui-view>
+        <div><h1>Test</h1></div>
+    </ui-view>
     <script type="text/javascript" src="./js/vendor.js"></script>
       <script type="text/javascript" src="./js/bundle.js"></script>
 </body>
