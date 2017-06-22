@@ -6,7 +6,8 @@ const about = {
 		ctrl.$onInit = function () {};
 
 	},
-	template: `<div>About</div>`
+	template: `<h1> About </h1>
+<h3> We are super duper cool </h3>`
 };
 
 angular.module('bc-site.about')

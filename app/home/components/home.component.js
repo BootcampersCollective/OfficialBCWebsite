@@ -2,7 +2,7 @@ const home = {
 	bindings: {
 		
 	},
-	controller: function () {
+	controller: function (authService) {
 		let ctrl = this;
 		ctrl.title = 'Bootcampers Collective';
 		
@@ -11,11 +11,11 @@ const home = {
 		};
 		ctrl.$postLink = function () {};
 	},
-	template: ` <h1>{{$ctrl.title}}</h1>
+	template: ` <h1 class="home-title">{{$ctrl.title}}</h1>
 <layout-component></layout-component>`
 };
 
 angular.module('bc-site.home')
 	.component('home', home);
 
-home.$inject = [];
+home.$inject = ['authService'];
